@@ -15,5 +15,6 @@ Fusion DiscoveryX 提供 **zip** 包和 **Docker** 镜像两种打包部署方�
 - [cluster-jdbc](cluster-jdbc.md)
 - [persistence-cassandra](persistence-cassandra.md)
 - [docker](docker.md)
+- [other-persistence](other-persistence.md)
 
 @@@

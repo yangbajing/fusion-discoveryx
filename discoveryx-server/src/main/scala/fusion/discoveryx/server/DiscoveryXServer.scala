@@ -125,10 +125,9 @@ object DiscoveryXServer extends StrictLogging {
       }
   }
 
-  def schemaReader(profile: String): Option[BufferedSource] =
+  private def schemaReader(profile: String): Option[BufferedSource] =
     Option(profile match {
       case "slick.jdbc.H2Profile$" => scala.io.Source.fromResource("sql/schemas/h2.sql")
-      //case "slick.jdbc.PostgresProfile$" => scala.io.Source.fromResource("sql/schemas/postgres.sql")
-      case _ => null
+      case _                       => null
     })
 }
